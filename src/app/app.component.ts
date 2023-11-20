@@ -16,4 +16,12 @@ export class AppComponent {
   data = {
     dataTitle: 'Angular Core Deep Dive',
   };
+
+  onLogoClicked() {
+    alert('hello world');
+  }
+
+  onKeyUp(newTitle: string) {
+    this.data.dataTitle = newTitle;
+  }
 }

@@ -185,6 +185,7 @@
         viewBox="0 0 982 239"
         fill="none"
         class="angular-logo"
+        (click)="onLogoClicked()"
       >
         <g clip-path="url(#a)">
           <path
@@ -228,6 +229,13 @@
       <h1>Hello, {{ title }}</h1>
       <h2>Hello: {{ data.dataTitle }}</h2>
       <p>Agrego esto: {{ Paragraph }}</p>
+
+      <input
+        class="Demo"
+        (keyup)="onKeyUp(titleInput.value)"
+        [value]="data.dataTitle"
+        #titleInput
+      />
 
       <p>Congratulations! Your app is running. 🎉</p>
       <p>Normal Paragraph</p>
